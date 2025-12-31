@@ -711,10 +711,11 @@ export default function MarketResearchDashboard() {
       <footer className="border-t border-zinc-800/50 mt-12">
         <div className="max-w-6xl mx-auto px-6 py-4 text-center">
           <p className="text-xs text-zinc-600">
-            Market Research • 154 trung tâm  • Region_1: Tỉnh | Region_2: TP/Quận/Huyện • Q4/2025
+            Market Research • 154 trung tâm (ID_school unique) • Region_1: Tỉnh | Region_2: Quận/Huyện • Q4/2025
           </p>
         </div>
       </footer>
     </div>
   );
 }
+
