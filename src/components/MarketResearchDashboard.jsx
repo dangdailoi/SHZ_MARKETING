@@ -29,21 +29,22 @@ const data = {
   // Region 2 details (for drill-down)
   region2: [
     // Bình Dương
-    { name: "Bến Cát", value: 2, parent: "Bình Dương" },
     { name: "Bình Dương (chung)", value: 16, parent: "Bình Dương" },
-    { name: "Dĩ An", value: 4, parent: "Bình Dương" },
     { name: "Tân Uyên", value: 8, parent: "Bình Dương" },
     { name: "Thủ Dầu Một", value: 5, parent: "Bình Dương" },
+      { name: "Dĩ An", value: 4, parent: "Bình Dương" },
     { name: "Thuận An", value: 3, parent: "Bình Dương" },
+    { name: "Bến Cát", value: 2, parent: "Bình Dương" },
+
   
     // TP. HCM
-    { name: "Gò Vấp", value: 2, parent: "TP. HCM" },
-    { name: "TP. HCM (chung)", value: 6, parent: "TP. HCM" },
-    { name: "Phú Nhuận", value: 1, parent: "TP. HCM" },
-    { name: "Quận 10", value: 2, parent: "TP. HCM" },
-    { name: "Quận 12", value: 2, parent: "TP. HCM" },
-    { name: "Quận 3", value: 1, parent: "TP. HCM" },
-    { name: "Thủ Đức", value: 1, parent: "TP. HCM" },
+    { name: "TP. HCM (chung)", value: 6, parent: "TP.HCM" },
+    { name: "Quận 10", value: 2, parent: "TP.HCM" },    
+    { name: "Gò Vấp", value: 2, parent: "TP.HCM" },
+    { name: "Quận 12", value: 2, parent: "TP.HCM" },
+    { name: "Quận 3", value: 1, parent: "TP.HCM" },
+    { name: "Phú Nhuận", value: 1, parent: "TP.HCM" },
+    { name: "Thủ Đức", value: 1, parent: "TP.HCM" },
   
     // Vũng Tàu
     { name: "TP. Vũng Tàu", value: 8, parent: "Vũng Tàu" }
