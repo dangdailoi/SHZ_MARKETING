@@ -28,13 +28,27 @@ const data = {
   
   // Region 2 details (for drill-down)
   region2: [
-    { name: "TP. Bình Dương", value: 16, parent: "Bình Dương" },
+    // Bình Dương
+    { name: "Bến Cát", value: 2, parent: "Bình Dương" },
+    { name: "Bình Dương (chung)", value: 16, parent: "Bình Dương" },
+    { name: "Dĩ An", value: 4, parent: "Bình Dương" },
     { name: "Tân Uyên", value: 8, parent: "Bình Dương" },
-    { name: "TP. Vũng Tàu", value: 8, parent: "Vũng Tàu" },
     { name: "Thủ Dầu Một", value: 5, parent: "Bình Dương" },
-    { name: "Dĩ An", value: 4, parent: "Bình Dương" }
-  ],
+    { name: "Thuận An", value: 3, parent: "Bình Dương" },
   
+    // TP. HCM
+    { name: "Gò Vấp", value: 2, parent: "TP. HCM" },
+    { name: "TP. HCM (chung)", value: 6, parent: "TP. HCM" },
+    { name: "Phú Nhuận", value: 1, parent: "TP. HCM" },
+    { name: "Quận 10", value: 2, parent: "TP. HCM" },
+    { name: "Quận 12", value: 2, parent: "TP. HCM" },
+    { name: "Quận 3", value: 1, parent: "TP. HCM" },
+    { name: "Thủ Đức", value: 1, parent: "TP. HCM" },
+  
+    // Vũng Tàu
+    { name: "TP. Vũng Tàu", value: 8, parent: "Vũng Tàu" }
+  ]
+
   // Channels (sorted by importance)
   channels: [
     { name: "Google Maps", value: 89, count: 137, type: "primary" },
@@ -399,7 +413,7 @@ export default function MarketResearchDashboard() {
 
             {/* REGION COMPARISON - Simple, scannable */}
             <section>
-              <h2 className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">So sánh theo tỉnh (Region_1)</h2>
+              <h2 className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">So sánh theo tỉnh (Provinces)</h2>
               <div className="grid grid-cols-3 gap-4">
                 {data.regions.slice(0, 3).map((region, i) => (
                   <button
@@ -430,7 +444,7 @@ export default function MarketResearchDashboard() {
               <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50 animate-in fade-in duration-300">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-lg font-semibold text-white">
-                    Chi tiết: {selectedRegion} (Region_2)
+                    Chi tiết: {selectedRegion} (Districts)
                   </h3>
                   <button 
                     onClick={() => setSelectedRegion(null)}
@@ -711,7 +725,7 @@ export default function MarketResearchDashboard() {
       <footer className="border-t border-zinc-800/50 mt-12">
         <div className="max-w-6xl mx-auto px-6 py-4 text-center">
           <p className="text-xs text-zinc-600">
-            Market Research • 154 trung tâm (ID_school unique) • Region_1: Tỉnh | Region_2: Quận/Huyện • Q4/2025
+            Market Research • 154 trung tâm • Q4/2025
           </p>
         </div>
       </footer>
