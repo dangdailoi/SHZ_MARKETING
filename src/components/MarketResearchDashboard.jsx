@@ -47,7 +47,7 @@ const data = {
   
     // Vũng Tàu
     { name: "TP. Vũng Tàu", value: 8, parent: "Vũng Tàu" }
-  ]
+  ],
 
   // Channels (sorted by importance)
   channels: [
