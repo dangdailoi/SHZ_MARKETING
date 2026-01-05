@@ -471,7 +471,7 @@ export default function MarketResearchDashboard() {
     { id: 'diagnostic', label: 'Chẩn đoán', badge: 'Quan trọng' },
     { id: 'funnel', label: 'Funnel' },
     { id: 'competitive', label: 'Cạnh tranh' },
-    { id: 'strategy', label: 'Chiến lược' }
+    // { id: 'strategy', label: 'Chiến lược' }
   ];
 
   return (
@@ -488,7 +488,7 @@ export default function MarketResearchDashboard() {
           <div className="flex items-center justify-between">
             <div>
               <div className="text-xs text-rose-400 font-medium tracking-wider mb-1">STRATEGIC MARKET RESEARCH</div>
-              <h1 className="text-xl font-semibold text-white">Thị trường Đào tạo Tiếng Trung • Nam Việt Nam</h1>
+              <h1 className="text-xl font-semibold text-white">Thị trường Đào Tiếng Trung</h1>
             </div>
 
             {/* Navigation */}
