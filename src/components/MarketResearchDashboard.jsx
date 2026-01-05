@@ -469,7 +469,7 @@ export default function MarketResearchDashboard() {
     { id: 'overview', label: 'Tổng quan' },
     { id: 'segments', label: 'Phân khúc KH' },
     { id: 'diagnostic', label: 'Chẩn đoán', badge: 'Quan trọng' },
-    { id: 'funnel', label: 'Funnel' },
+    // { id: 'funnel', label: 'Funnel' },
     { id: 'competitive', label: 'Cạnh tranh' },
     // { id: 'strategy', label: 'Chiến lược' }
   ];
